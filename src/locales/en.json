@@ -1,0 +1,133 @@
+{
+  "app": {
+    "title": "PRAKRITI",
+    "subtitle": "Case Taking Software",
+    "doctorVerification": "Doctor Verification",
+    "tagline": "Identity & Professional Registration Verification",
+    "nav": {
+      "verifiedStatus": "Verified Doctor",
+      "unverifiedStatus": "Verification Pending",
+      "sandboxBadge": "Sandbox Mode"
+    }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "hi": "हिन्दी"
+  },
+  "verification": {
+    "title": "Doctor Identity & Registration Verification",
+    "description": "Verify your National Medical Commission (NMC) registration and confirm your identity via live facial biometric match.",
+    "steps": {
+      "doctorDetails": "Doctor Details",
+      "idDocument": "ID Document",
+      "liveness": "Live Liveness",
+      "faceMatch": "FaceNet Match",
+      "outcome": "Outcome"
+    },
+    "stepNumbers": {
+      "step1": "01",
+      "step2": "02",
+      "step3": "03",
+      "step4": "04",
+      "step5": "05"
+    },
+    "doctorDetails": {
+      "title": "NMC Registration Details",
+      "description": "Enter your professional details as registered with the National Medical Commission (NMC).",
+      "name": "Doctor Full Name",
+      "namePlaceholder": "e.g. Dr. Jane Smith",
+      "registrationNumber": "Medical Registration Number",
+      "registrationNumberPlaceholder": "e.g. 48217 or 123456",
+      "medicalCouncil": "Medical Council / State Board",
+      "medicalCouncilPlaceholder": "Select or type your registered council",
+      "selectCouncil": "-- Select State Medical Council --",
+      "sandboxNotice": "Sandbox Mode Active: Use test credential 'Priyansh V Shah', Reg '48217', Council 'SANDBOX TEST COUNCIL' for demo testing."
+    },
+    "idDocument": {
+      "title": "Government Identity Document",
+      "description": "Upload a clear government ID or medical registration certificate containing your photo.",
+      "uploadPrompt": "Click or drag & drop ID document (JPEG/PNG, max 10MB)",
+      "fileSelected": "Document selected",
+      "extractFace": "Detecting face in document...",
+      "faceFound": "Face detected in document",
+      "noFaceFound": "No face found in the document. Please upload a clear photo ID.",
+      "privacyNotice": "Privacy Guaranteed: Uploaded ID documents and face embeddings are purged from memory immediately upon completion."
+    },
+    "liveness": {
+      "title": "Live Blink & Liveness Detection",
+      "description": "Position your face inside the frame. Blink naturally when instructed to prove liveness.",
+      "cameraPrompt": "Opening secure camera stream...",
+      "instruction": "Look directly at the camera and blink naturally",
+      "blinkDetected": "Blink detected!",
+      "verifyingLiveness": "Verifying liveness...",
+      "livenessPassed": "Liveness check passed",
+      "livenessFailed": "Liveness check failed. Please try again.",
+      "capturingSnapshot": "Capturing secure biometric snapshot...",
+      "cameraPermissionDenied": "Camera access was denied. Please allow camera permissions in your browser."
+    },
+    "faceMatch": {
+      "title": "FaceNet Biometric Verification",
+      "description": "Running on-device FaceNet inference to match ID document photo with live camera snapshot.",
+      "processing": "Running FaceNet model inference...",
+      "comparing": "Comparing facial embeddings...",
+      "match": "Biometric match confirmed",
+      "noMatch": "Biometric match failed. Faces do not match.",
+      "distance": "Embedding Distance",
+      "threshold": "Threshold"
+    },
+    "outcome": {
+      "successTitle": "Verification Successful",
+      "successSubtitle": "Your identity and professional registration have been verified.",
+      "failedTitle": "Verification Failed",
+      "failedSubtitle": "We could not verify your identity or registration details.",
+      "doctorId": "Doctor ID",
+      "registrationNumber": "Registration Number",
+      "medicalCouncil": "Medical Council",
+      "verificationSource": "Verification Source",
+      "nmcRegistry": "NMC Registry",
+      "sandboxBadge": "DEMO SANDBOX VERIFIED",
+      "sandboxDisclaimer": "This is a demonstration result and is not an NMC registry result.",
+      "proceedToDashboard": "Proceed to Dashboard",
+      "reason": "Failure Reason",
+      "retry": "Try Verification Again"
+    },
+    "actions": {
+      "continue": "Continue",
+      "back": "Back",
+      "verify": "Verify Details",
+      "verifying": "Verifying...",
+      "retry": "Retry",
+      "cancel": "Cancel",
+      "capture": "Capture Snapshot",
+      "retake": "Retake",
+      "startCamera": "Start Camera",
+      "stopCamera": "Stop Camera"
+    },
+    "status": {
+      "idle": "Pending",
+      "verifying": "Verifying...",
+      "success": "Verified",
+      "failed": "Failed",
+      "unavailable": "Service Unavailable"
+    },
+    "nmc": {
+      "verified": "NMC Record Verified",
+      "sandbox": "Sandbox Demo Record Verified",
+      "unavailable": "Verification isn't available right now. Please try again later.",
+      "notFound": "Registration record not found in NMC register. Please check details."
+    },
+    "errors": {
+      "requiredFields": "Please fill in all required fields.",
+      "uploadDocument": "Please upload an ID document first.",
+      "livenessFailed": "Liveness check could not be completed.",
+      "faceMismatch": "Facial comparison did not meet threshold.",
+      "unexpected": "An unexpected error occurred during verification."
+    }
+  }
+}
