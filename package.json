@@ -1,0 +1,38 @@
+{
+  "name": "prakriti-case-taking",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/copy-wasm.js",
+    "build": "tsc && vite build",
+    "lint": "vite build --mode development",
+    "preview": "vite preview",
+    "server": "tsx server/index.ts",
+    "test:facenet": "tsx src/test-facenet.ts",
+    "copy:wasm": "node scripts/copy-wasm.js",
+    "download:facenet": "node scripts/download-facenet.js"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.20",
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lucide-react": "^1.16.0",
+    "onnxruntime-web": "^1.29.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}
